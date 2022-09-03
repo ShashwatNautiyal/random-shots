@@ -8,14 +8,16 @@ type ImageWithLabelType = {
   photo: RandomPhoto | TopicPhoto;
   index: number;
   onClick: () => void;
+  showBlur?: boolean;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export const ImageWithLabel = (props: ImageWithLabelType) => {
-  const { photo, index, onClick, className, ...rest } = props;
+  const { photo, index, onClick, className, showBlur = true, ...rest } = props;
 
   return (
     <div {...rest} className={className}>
       <Image
+        showBlur={showBlur}
         onClick={onClick}
         className="block h-full select-none"
         src={photo.urls.regular}
@@ -36,6 +38,7 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
           <div className="absolute inset-0 bg-black bg-opacity-10 hover:bg-opacity-40 transition-all rounded-md"></div>
           <div className="h-10 w-10 pointer-events-none">
             <Image
+              showBlur={showBlur}
               imageCustomStyles={{ borderRadius: "9999px" }}
               loading="lazy"
               alt={photo.user.name}

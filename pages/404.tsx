@@ -13,11 +13,11 @@ const Error: NextPage = () => {
       <Head>
         <title>404 Page not found</title>
       </Head>
-      <div className="lg:w-10/12 md:w-11/12 max-w-7xl md:my-10 my-5 w-full mx-auto flex md:flex-row flex-col md:mt-0 mt-10 items-center justify-between h-full">
+      <div className="lg:w-10/12 md:w-11/12 max-w-7xl w-full mx-auto flex md:flex-row flex-col-reverse items-center md:justify-between justify-center min-h-[90vh]">
         <div className="flex flex-col gap-3 md:items-start items-center">
-          <h1 className="text-gray-800">404 error</h1>
+          <h1 className="text-gray-500">404 error</h1>
           <h2 className="md:text-5xl text-3xl font-semibold">Page not found...</h2>
-          <h3 className="text-gray-600 w-5/6 md:text-left text-center">
+          <h3 className="text-gray-500 w-5/6 md:text-left text-center">
             Sorry, the page you are looking for doesn&apos;t exist or has been moved.
           </h3>
           <Link href={"/"} passHref>
@@ -26,7 +26,7 @@ const Error: NextPage = () => {
             </a>
           </Link>
         </div>
-        <div className="lg:max-w-sm  max-w-xs w-screen relative h-full">
+        <div className="lg:max-w-sm max-w-xs relative h-[300px] w-full">
           <Image
             layout="fill"
             objectFit="contain"

@@ -51,6 +51,7 @@ export const HomeFeed = (props: HomeFeedProps) => {
           {randomPhotos.map((randomPhoto, index) => (
             <Fragment key={randomPhoto.id}>
               <ImageWithLabel
+                showBlur={false}
                 className={classNames(
                   index === 0 || index === 11 ? "col-span-2 row-span-2" : "col-span-1",
                   "h-full w-full aspect-square relative cursor-pointer lg:block hidden"
@@ -63,6 +64,7 @@ export const HomeFeed = (props: HomeFeedProps) => {
                 index={index}
               />
               <ImageWithLabel
+                showBlur={false}
                 className={classNames(
                   index === 0 || index === 10 ? "md:col-span-2 md:row-span-2" : "col-span-1",
                   "h-full w-full aspect-square relative cursor-pointer lg:hidden block"
