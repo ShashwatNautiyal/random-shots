@@ -45,6 +45,7 @@ export const ProfileFeed = ({
             <Image
               blurHash={photo.blur_hash}
               loading="eager"
+              showBlur={false}
               alt={photo.description ?? ""}
               objectFit="cover"
               src={photo.urls.small}
