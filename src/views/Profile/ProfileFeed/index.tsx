@@ -44,7 +44,7 @@ export const ProfileFeed = ({
           <div key={photo.id} className="relative min-h-full min-w-full aspect-square">
             <Image
               blurHash={photo.blur_hash}
-              loading="lazy"
+              loading="eager"
               alt={photo.description ?? ""}
               objectFit="cover"
               src={photo.urls.small}

@@ -11,11 +11,11 @@ import Image from '../../../common/Image';
 import { classNames } from '../../../utils/helpers';
 import { Topic } from '../../../utils/types/topic';
 
-type HomeTopicBarProps = {
+type TopicBarProps = {
   topics: Topic[];
 };
 
-const HomeTopicBar = (props: HomeTopicBarProps) => {
+const TopicBar = (props: TopicBarProps) => {
   const { topics } = props;
   const { query } = useRouter();
   let { topicId } = query;
@@ -87,4 +87,4 @@ const HomeTopicBar = (props: HomeTopicBarProps) => {
   );
 };
 
-export default HomeTopicBar;
+export default TopicBar;

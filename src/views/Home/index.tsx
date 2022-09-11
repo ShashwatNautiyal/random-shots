@@ -2,7 +2,7 @@ import { RandomPhoto } from '../../utils/types/randomPhoto';
 import { Topic } from '../../utils/types/topic';
 import { TopicPhoto } from '../../utils/types/topicPhoto';
 import { HomeFeed } from './HomeFeed';
-import HomeTopicBar from './HomeTopicBar';
+import HomeTopicBar from './TopicBar';
 import { TopicFeed } from './TopicFeed';
 
 type HomeProps = {

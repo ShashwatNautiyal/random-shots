@@ -9,10 +9,11 @@ type ImageWithLabelType = {
   index: number;
   onClick: () => void;
   showBlur?: boolean;
+  loading?: 'eager' | 'lazy';
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export const ImageWithLabel = (props: ImageWithLabelType) => {
-  const { photo, index, onClick, className, showBlur = true, ...rest } = props;
+  const { photo, index, onClick, className, showBlur = true,loading= "lazy", ...rest } = props;
 
   return (
     <div {...rest} className={className}>
@@ -22,7 +23,7 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
         className="block h-full select-none"
         src={photo.urls.regular}
         blurHash={photo.blur_hash}
-        loading="lazy"
+        loading={loading}
         alt={photo.description}
         objectFit={"cover"}
         urls={photo.urls}
@@ -39,8 +40,8 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
           <div className="h-10 w-10 pointer-events-none">
             <Image
               showBlur={showBlur}
+              loading={loading}
               imageCustomStyles={{ borderRadius: "9999px" }}
-              loading="lazy"
               alt={photo.user.name}
               objectFit="cover"
               urls={photo.user.profile_image}

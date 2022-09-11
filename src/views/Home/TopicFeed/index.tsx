@@ -58,6 +58,7 @@ export const TopicFeed = (props: TopicFeedProps) => {
             <Fragment key={topicPhoto.id}>
               <ImageWithLabel
                 showBlur={false}
+                loading="eager"
                 className={classNames(
                   index === 0 || index === 11 ? "col-span-2 row-span-2" : "col-span-1",
                   "h-full w-full aspect-square relative cursor-pointer lg:block hidden"
@@ -70,6 +71,7 @@ export const TopicFeed = (props: TopicFeedProps) => {
                 index={index}
               />
               <ImageWithLabel
+                loading="eager"
                 showBlur={false}
                 className={classNames(
                   index === 0 || index === 10 ? "md:col-span-2 md:row-span-2" : "col-span-1",
