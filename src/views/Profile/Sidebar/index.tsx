@@ -34,7 +34,7 @@ export const Sidebar = (props: SidebarProps) => {
             urls={user?.profile_image}
             src={user?.profile_image.medium ?? ""}
             loading="eager"
-            alt={user?.name}
+            alt={user?.name ?? "unknown_user"}
           />
         </div>
       </div>
@@ -89,7 +89,7 @@ export const Sidebar = (props: SidebarProps) => {
                     imageCustomStyles={imageCustomStyles}
                     urls={tag.source.cover_photo.urls}
                     loading="eager"
-                    alt={tag.title}
+                    alt={tag.title ?? "unspash_photo"}
                     src={tag.source.cover_photo.urls.small}
                   />
                 </div>

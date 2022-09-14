@@ -8,7 +8,6 @@ import {
     BiHome,
     BiSearch,
 } from 'react-icons/bi';
-import { CgAbstract } from 'react-icons/cg';
 import {
     MdOutlineDarkMode,
     MdOutlineLightMode,
@@ -63,15 +62,13 @@ const Navbar = () => {
         <div className={classNames("max-w-[1400px]   mx-auto flex justify-between ")}>
           <Link href={"/"} passHref>
             <a className="flex md:gap-3 gap-1 items-center">
-              <CgAbstract className="md:h-8 md:w-8 h-6 w-6" />
-              <span className="font-satisfy text-3xl">Growwgram</span>
+              <img src='/logo.png' alt='logo' className="h-8 w-8" />
+              <span className="font-satisfy text-3xl">RandomShots</span>
             </a>
           </Link>
           <div className="flex gap-6 items-center">
             <Link href={"/"} passHref>
-              <a>
                 <BiHome className="h-7 w-7 cursor-pointer md:block hidden" />
-              </a>
             </Link>
             <input
               type={"search"}
@@ -82,9 +79,7 @@ const Navbar = () => {
               )}
               placeholder="Search"
             />
-            <button>
-              <BiSearch className="h-7 w-7 md:block hidden" />
-            </button>
+            <BiSearch className="h-7 w-7 md:block hidden cursor-pointer" />
           </div>
           <div className="flex gap-5 items-center">
             {theme === "dark" ? (
@@ -100,7 +95,7 @@ const Navbar = () => {
             )}
             <img
               className="h-8 w-8 rounded-full object-cover"
-              src="https://avatars.dicebear.com/api/big-smile/shashwat.svg?flip=true"
+              src="https://www.financialexpress.com/wp-content/uploads/2021/09/MyGlamm-With-Shraddha-Kapoor.jpeg"
               alt=""
             />
           </div>
@@ -116,9 +111,7 @@ const Navbar = () => {
           )}
           placeholder="Search"
         />
-        <button type="submit">
-          <BiSearch className="md:h-7 md:w-7 h-6 w-6 md:hidden block " />
-        </button>
+          <BiSearch className="md:h-7 md:w-7 h-6 w-6 md:hidden block cursor-pointer" />
       </div>
     </div>
   );

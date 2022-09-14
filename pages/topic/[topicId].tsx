@@ -76,7 +76,6 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext<{ topicId
       topicPhotos: topicPhotosData.topicPhotos.result,
       topics: topicsData.topics.result
     },
-    revalidate: 60
   };
 };
 

@@ -10,9 +10,10 @@ import PrimaryButton from '../src/common/PrimaryButton';
 const ServerError: NextPage = () => {
   return (
     <>
-      <Head>
-        <title></title>
-      </Head>
+        <Head>
+            <title>500 Internal server error</title> 
+            <meta name="description" content="Random Shots is a Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos." />   
+        </Head>
 
       <div className="lg:w-10/12 md:w-11/12 max-w-7xl md:my-10 my-5 w-full mx-auto flex md:flex-row flex-col md:mt-0 mt-10 items-center justify-between h-full">
         <div className="flex flex-col gap-3 md:items-start items-center">

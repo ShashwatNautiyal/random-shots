@@ -14,6 +14,7 @@ export type TopicPhoto = {
   color: string;
   blur_hash: string;
   description: string;
+  alt_description: string;
   likes: number;
   user: User;
   urls: Urls;

@@ -11,7 +11,8 @@ const Error: NextPage = () => {
   return (
     <>
       <Head>
-        <title>404 Page not found</title>
+            <title>404 Page not found</title>
+            <meta name="description" content="Random Shots is a Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos." />   
       </Head>
       <div className="lg:w-10/12 md:w-11/12 max-w-7xl w-full mx-auto flex md:flex-row flex-col-reverse items-center md:justify-between justify-center min-h-[90vh]">
         <div className="flex flex-col gap-3 md:items-start items-center">

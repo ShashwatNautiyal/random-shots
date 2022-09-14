@@ -24,7 +24,7 @@ export const ImageWithLabel = (props: ImageWithLabelType) => {
         src={photo.urls.regular}
         blurHash={photo.blur_hash}
         loading={loading}
-        alt={photo.description}
+        alt={photo.description ?? photo.alt_description ?? "unspash_photo"}
         objectFit={"cover"}
         urls={photo.urls}
       />

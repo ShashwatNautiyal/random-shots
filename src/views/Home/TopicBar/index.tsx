@@ -56,7 +56,7 @@ const TopicBar = (props: TopicBarProps) => {
                 showBlur={false}
                 loading="lazy"
                 urls={topic.cover_photo.urls}
-                alt={topic.title}
+                alt={topic.title ?? "Topic"}
                 className={classNames("object-cover h-14 aspect-video w-auto pointer-events-none")}
                 objectFit={"cover"}
               />

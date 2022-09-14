@@ -111,7 +111,7 @@ export const ProfileFeed = ({
               <Image
                 blurHash={photo.blur_hash}
                 loading="lazy"
-                alt={photo.description ?? ""}
+                alt={photo.description ?? photo.alt_description ?? "unspash_photo"}
                 objectFit="cover"
                 src={photo.urls.small}
                 urls={photo.urls}

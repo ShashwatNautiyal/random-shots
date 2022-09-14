@@ -16,7 +16,7 @@ type ImageProps = {
   };
   blurHash?: string;
   loading: "lazy" | "eager" | undefined;
-  alt?: string;
+  alt: string;
   objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down";
   className?: string;
   imageCustomStyles?: CSSProperties;
